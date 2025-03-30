@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --red-900: #b72f33;
+  --red-50: #E7A6AB
+  --font-lato: "Lato", sans-serif;
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-out;
+  @keyframes fade-in-scale {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+body {
+  font-family: var(--font-lato);
+}
